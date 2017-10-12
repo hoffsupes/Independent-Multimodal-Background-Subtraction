@@ -1,6 +1,8 @@
 # Independent-Multimodal-Background-Subtraction
 Implementation for the Independent Multimodal Background Subtraction based on a paper written by Bloisi and Iocchi
 
+Background subtraction is a form of **change detection** wherein the background is learnt via some model and then subtracted from the image to give the foreground. This learning of the background falls under **unsupervised machine learning**. However in case of IMBS, the point to be taken note of is the fact that it can model multiple values per pixel for the background, instead of simple subtraction, any incoming pixel is correlated with all the values at a specific node (location) and if a match is not found then it is said to belong to the foreground.
+
 The basic infrastructure has only been created. Shadow detection and removal has been implemented but not used in the final code. If you do wish to use the code with it, then the function and it's usage (commented out) is present and you are free to do so. 
 
 This is a skeletal implementation, for those who want to gain a basic understanding of the concept and feel that the original author's implementation is too complicated. This has been implemented according to the pseudocode presented in the paper, so it directly correlates to that. That being said, *all portions needed for generating a sufficient background model are present* so if you only need something till that stage, go ahead, do give credit to the people who wrote the paper and also link to here if you do end up using the code somewhere.
